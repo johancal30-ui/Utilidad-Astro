@@ -1,17 +1,29 @@
 ---
-
+import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+<BaseLayout pageTitle="Manual">
+	
+	</header>
+</BaseLayout>
+	<Navigation/>
+		<main class="p-6 mx-auto">
+			<p class="text-lg text-black">Bienvenido al Manual Técnico desarrollado como evidencia de aprendizaje para la construcción de un sitio web estático multipágina.
+Este proyecto tiene como finalidad documentar el proceso de instalación, configuración y desarrollo de una aplicación web utilizando Astro, Tailwind CSS y CSS tradicional en un entorno Linux.
+A través de este manual se presentan los conceptos fundamentales empleados durante el desarrollo del proyecto, siguiendo buenas prácticas de organización, reutilización de código y diseño responsivo.</p>
+		<img class="w-30 h-30 m-5 mx-auto" src="https://images.seeklogo.com/logo-png/42/2/astro-logo-png_seeklogo-428045.png" alt="Astro Logo" />
+		<h2 class="text-xl bg-green-100 mt-11">EXTENSION ASTRO</h2>
+		<p>Para crear una extension de Astro, debes crear una carpeta con el nombre que desee, y le damos abrir "en una terminal": </p>
+		<p>En la terminal escribimos: </p>
+		<img class="w-full h-auto mb-5 mt-1 mx-auto rounded shadow" src="src/images/como crear carpeta astro.png" alt="Astro Add Command" />
+		<p class="mb-5">Luego de eso, nos mostrar un mensaje en el cual debemos de ponerle nombre a la carpeta, luego le damos "empy" y a todo "yes". LISTO abre tu visual con la carpeta que creaste </p>
+		<h2 class="text-xl bg-green-100">TAILWINDS</h2>
+		<p>Para agregar el tailwinds al Astro toca abrir la terminal y escribir esto: </p>
+		<img class="w-full h-auto mb-5 mt-1 mx-auto rounded shadow" src="src/images/tailwind.png" alt="Tailwind" />
+		<p class="mb-5">Luego de eso, debemos de darle a todo lo que nos pida "yes". Y ya quedaria instalado, y en el css le damos:  <strong> import "tailwindcss"</strong></p>
 	</head>
-	<body>
-		<h1>Astro</h1>
+</main>
 	</body>
 </html>
